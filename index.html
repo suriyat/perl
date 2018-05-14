@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+    rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <title>Appointments</title>
+</head>
+<body>
+        <script type = "text/javascript" src="./js/pop.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    <div id ="new">
+       <button type="button" class="btn btn-dark">New</button>
+         <br/>
+     </div>
+     <!-- Hidden Form -->
+        <form>
+            <div id = "add">
+                <br/>
+                <button type="button" class="btn btn-dark" onclick="addAppt()">Add</button>
+                <button type="button" class="btn btn-warning" id="hide">Cancel</button>
+                <br/><br/>
+                <label>Date</label>
+                <input type="text" id="addPicker" name="indate" required>
+                <br/>
+                <label>Time</label>
+                <input type="text" id="addTime" name="intime" required>
+                <br/>
+                <label>Desc</label>
+                <input type="text" id="addDesc" name="indesc" required>
+                <br/>  
+            </div>
+        </form>
+        <br/><br/><br/>
+        
+        <div>
+            <input type="text" id="searchTxt" class="form-control" placeholder="Enter your query"><br/>
+
+            <button type="button" id="searchBtn" class="btn btn-secondary" onclick="searchAppts()">Search</button>
+        </div>
+    <table id="apptsTable" border="2">
+        
+        <!--TD appts will come here-->
+    </table>
+    
+</body>
+</html>
